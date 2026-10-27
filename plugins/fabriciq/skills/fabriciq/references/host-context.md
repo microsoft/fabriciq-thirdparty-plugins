@@ -9,17 +9,19 @@ Keep report IDs and semantic-model IDs distinct.
 
 ## Environment
 
-Use the existing production Streamable HTTP endpoint:
-`https://fabriciq.svc.cloud.microsoft/v1/mcp/fabriciq`.
+Use the production Streamable HTTP endpoint configured for the host's connection:
+`https://api.fabric.microsoft.com/v1/mcp/fabriciq` (ChatGPT) or
+`https://fabriciq.svc.cloud.microsoft/v1/mcp/fabriciq` (other hosts).
 Do not add custom headers, `X-Variants`, a proxy, or a version pin.
 The host supplies standard MCP headers and the user's OAuth authorization.
 
 ## Authentication
 
 Use the host's Connect/Reconnect interface and delegated Microsoft Entra OAuth.
-The connection requests the `https://api.fabric.microsoft.com/.default` scope,
-which grants the delegated Power BI Service permissions consented on the app
-registration (`Item.Read.All` and `Item.Execute.All`). `offline_access` enables
+The connection requests the `.default` scope matching that endpoint
+(`https://api.fabric.microsoft.com/.default` or
+`https://fabriciq.svc.cloud.microsoft/.default`), which grants the delegated
+permissions consented on the app registration. `offline_access` enables
 token refresh; it is not an additional Fabric data permission.
 
 Do not request passwords, certificates, access tokens, or client secrets in chat.

@@ -3,7 +3,7 @@
   "mcpServers": {
     "fabriciq": {
       "type": "streamable-http",
-      "url": "https://fabriciq.svc.cloud.microsoft/v1/mcp/fabriciq",
+      "url": "https://api.fabric.microsoft.com/v1/mcp/fabriciq",
       "extensions": {
         "com.openai": {
           "auth": {
@@ -15,7 +15,15 @@
             },
             "baseScopes": [
               "offline_access"
-            ]
+            ],
+            "authorizationServerBase": "https://login.microsoftonline.com/organizations/v2.0",
+            "authorizationUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize",
+            "tokenUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
+            "resource": "https://api.fabric.microsoft.com",
+            "defaultScopes": [
+              "https://api.fabric.microsoft.com/.default"
+            ],
+            "oidcEnabled": false
           }
         }
       }

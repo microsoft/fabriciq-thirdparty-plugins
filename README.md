@@ -152,9 +152,16 @@ build.
 `mcp.json` uses the OpenAI `extensions["com.openai"]` block for OAuth, so it
 doesn't validate against the strict agent-plugins.org schema. That's expected.
 
-`baseScopes` is only `offline_access`. ChatGPT also requests the scope the MCP
-server advertises (`https://fabriciq.svc.cloud.microsoft/.default`), and Entra
-rejects a request with two `.default` scopes (AADSTS70011).
+For ChatGPT, `mcp.json` points at `https://api.fabric.microsoft.com/v1/mcp/fabriciq`
+and sets `resource` to `https://api.fabric.microsoft.com` with the
+`https://api.fabric.microsoft.com/.default` scope. The Fabric IQ host advertises
+a path-based resource (`.../v1/mcp/fabriciq`) that Entra rejects at token
+exchange (AADSTS9010010), and the portal doesn't apply the `resource` override
+there. Switch back once the Fabric IQ host advertises
+`https://fabriciq.svc.cloud.microsoft` as its resource.
+
+`baseScopes` is only `offline_access`. Entra rejects a request with two
+`.default` scopes (AADSTS70011).
 
 Before submitting at platform.openai.com/plugins:
 
