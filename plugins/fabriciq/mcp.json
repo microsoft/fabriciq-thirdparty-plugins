@@ -4,13 +4,14 @@
     "fabriciq": {
       "type": "streamable-http",
       "url": "https://api.fabric.microsoft.com/v1/mcp/fabriciq",
+      "headers": {},
       "extensions": {
         "com.openai": {
           "auth": {
             "type": "oauth",
             "client": {
               "mode": "provided",
-              "clientId": "07d6b09b-964d-41a9-b1ba-08c4e15320c7",
+              "clientId": "e0476654-c1d5-430b-ab80-70cbd947616a",
               "tokenEndpointAuthMethod": "client_secret_post"
             },
             "baseScopes": [
