@@ -1,5 +1,5 @@
 {
-  "name": "powerbi",
+  "name": "powerbi-authoring",
   "displayName": "Power BI",
   "version": "0.1.1",
   "description": "Power BI semantic-model tools with shared modeling workflows: inspect models, write and test DAX, and prepare model changes.",
