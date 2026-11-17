@@ -1,0 +1,23 @@
+{
+  "name": "powerbi",
+  "displayName": "Power BI",
+  "version": "0.1.1",
+  "description": "Power BI semantic-model tools with shared modeling workflows: inspect models, write and test DAX, and prepare model changes.",
+  "author": {
+    "name": "Microsoft Corporation",
+    "url": "https://powerbi.microsoft.com"
+  },
+  "homepage": "https://powerbi.microsoft.com",
+  "keywords": [
+    "power-bi",
+    "semantic-models",
+    "models",
+    "datasets",
+    "dax",
+    "modeling"
+  ],
+  "icon": "./assets/color.png",
+  "supportUrl": "https://powerbi.microsoft.com/support/",
+  "privacyPolicyUrl": "https://go.microsoft.com/fwlink/?linkid=2282651",
+  "termsOfServiceUrl": "https://go.microsoft.com/fwlink/?linkid=2282650"
+}
