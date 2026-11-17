@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "powerbi": {
+      "type": "http",
+      "url": "https://api.fabric.microsoft.com/v1/mcp/powerbi/authoring"
+    }
+  }
+}

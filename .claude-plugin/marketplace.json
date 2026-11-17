@@ -16,6 +16,16 @@
         "name": "Microsoft"
       },
       "license": "MIT"
+    },
+    {
+      "name": "powerbi-authoring",
+      "source": "./plugins/powerbi-authoring",
+      "description": "Power BI semantic-model tools with shared modeling workflows: inspect models, write and test DAX, and prepare model changes.",
+      "version": "0.1.1",
+      "author": {
+        "name": "Microsoft Corporation"
+      },
+      "license": "MIT"
     }
   ]
 }
