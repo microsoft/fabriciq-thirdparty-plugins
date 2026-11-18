@@ -19,7 +19,7 @@ one you mean.
 
 ## Requirements
 
-- A Microsoft Entra work or school account.
+- A Microsoft Entra work or school account with a Microsoft Fabric license.
 - Access to Microsoft Fabric or Power BI, with permission to read the reports
   and semantic models you want to ask about.
 
