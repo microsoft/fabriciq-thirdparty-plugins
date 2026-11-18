@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fabriciq",
   "version": "0.1.0",
-  "description": "Ask questions about your Power BI reports and semantic models in Microsoft Fabric and get plain-language answers backed by your data.",
+  "description": "Ask questions about your Power BI reports and semantic models in Microsoft Fabric and get plain-language answers backed by your data. Requires a Microsoft Fabric license.",
   "author": {
     "name": "Microsoft",
     "url": "https://www.microsoft.com"
@@ -16,7 +16,7 @@
       "interface": {
         "displayName": "Microsoft Fabric IQ",
         "shortDescription": "Ask questions about Power BI",
-        "longDescription": "Microsoft Fabric IQ finds the Power BI reports and semantic models you can access in Microsoft Fabric, reads their tables, measures and relationships, writes and runs the DAX query for you, and explains the result in plain language. It runs with your own delegated permissions, respects row-level and object-level security, and is read-only: it never creates, changes or deletes reports, models or measures.",
+        "longDescription": "Microsoft Fabric IQ finds the Power BI reports and semantic models you can access in Microsoft Fabric, reads their tables, measures and relationships, writes and runs the DAX query for you, and explains the result in plain language. It runs with your own delegated permissions, respects row-level and object-level security, and is read-only: it never creates, changes or deletes reports, models or measures. Requires a Microsoft Fabric license.",
         "developerName": "Microsoft",
         "category": "Productivity",
         "capabilities": [
