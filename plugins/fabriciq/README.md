@@ -1,7 +1,6 @@
 # Microsoft Fabric IQ
 
-Ask questions about your Power BI reports and semantic models in Microsoft Fabric,
-in plain language, and get answers backed by your data.
+Access your Power BI reports and semantic models in Microsoft Fabric and get answers grounded in your governed data.  Requires a Microsoft Fabric license
 
 Microsoft Fabric IQ finds the reports and semantic models you can access, understands their
 tables, measures and relationships, writes and runs the DAX query for you, and

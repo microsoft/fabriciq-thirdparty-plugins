@@ -2,7 +2,7 @@
   "name": "fabriciq",
   "displayName": "Microsoft Fabric IQ",
   "version": "0.1.0",
-  "description": "Ask questions about your Power BI reports and semantic models in Microsoft Fabric and get plain-language answers backed by your data. Requires a Microsoft Fabric license.",
+  "description": "Access your Power BI reports and semantic models in Microsoft Fabric and get answers grounded in your governed data.  Requires a Microsoft Fabric license",
   "author": {
     "name": "Microsoft",
     "url": "https://www.microsoft.com"
